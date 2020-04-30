@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Blog{
 	String title;
-	int description;
+	String description;
 	LocalDate postedOn;
 	public String getTitle() {
 		return title;
@@ -12,10 +12,10 @@ public class Blog{
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public int getDescription() {
+	public String getDescription() {
 		return description;
 	}
-	public void setDescription(int description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 	public LocalDate getPostedOn() {
@@ -24,7 +24,7 @@ public class Blog{
 	public void setPostedOn(LocalDate postedOn) {
 		this.postedOn = postedOn;
 	}
-	public Blog(String title, int description, LocalDate postedOn) {
+	public Blog(String title, String description, LocalDate postedOn) {
 		super();
 		this.title = title;
 		this.description = description;

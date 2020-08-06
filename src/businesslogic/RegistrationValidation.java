@@ -7,6 +7,7 @@ public class RegistrationValidation {
 	private static final String PASSWORD_PATTERN = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})";
 	private Pattern pattern;
 	  private Matcher matcher1,matcher2;
+	  
 	public boolean checkUserDetails(String email,String password,String confirmPassword) {
 		System.out.println("Enter check your details");
 		if(validEmail(email) && validPassword(password,confirmPassword))

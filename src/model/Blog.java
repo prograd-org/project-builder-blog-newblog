@@ -1,38 +1,44 @@
 package model;
 // Type your code
 
-import java.time.*;
+import java.time.LocalDate;
 
 public class Blog{
+	private String blogTitle;
+	private String blogDescription;
+	private LocalDate date;
 	
-	String title;
-	String description;
-	LocalDate postedOn;
-	
-	public String getTitle() {
-		return title;
+	public Blog(String blogTitle, String blogDescription, LocalDate postedon) {
+		this.blogTitle = blogTitle;
+		this.blogDescription = blogDescription;
+		this.date = date;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+
+	public String getBlogTitle() {
+		return blogTitle;
 	}
-	public String getDescription() {
-		return description;
+
+	public void setBlogTitle(String blogTitle) {
+		this.blogTitle = blogTitle;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+
+	public String getBlogDescription() {
+		return blogDescription;
 	}
-	public LocalDate getPostedOn() {
-		return postedOn;
+
+	public void setBlogDescription(String blogDescription) {
+		this.blogDescription = blogDescription;
 	}
-	public void setPostedOn(LocalDate postedOn) {
-		this.postedOn = postedOn;
+
+	public LocalDate getDate() {
+		return date;
 	}
-	public Blog(String title, String description, LocalDate postedOn) {
-		super();
-		this.title = title;
-		this.description = description;
-		this.postedOn = postedOn;
+
+	public void setDate(LocalDate date) {
+		this.date = date;
 	}
+
+
 	
 	
 }

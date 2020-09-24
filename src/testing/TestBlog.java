@@ -1,6 +1,6 @@
 package testing;
 
-// Uncomment the below code to test your application
+/* Uncomment the below code to test your application*/
 
 import static org.junit.Assert.*;
 
@@ -16,16 +16,16 @@ public class TestBlog {
 	
 	 @Test
 	 public void testSetterGetter() {
-		 blog.setDescription("ProgrammingLanguage");
-		 blog.setTitle("Java");
-		 blog.setPostedOn(ld);
-		 assertEquals("ProgrammingLanguage",blog.getDescription());
-		 assertEquals("Java",blog.getTitle());
-		 assertEquals(ld,blog.getPostedOn());
+		 blog.setBlogDescription("ProgrammingLanguage");
+		 blog.setBlogTitle("Java");
+		 blog.setDate(ld);
+		 assertEquals("ProgrammingLanguage",blog.getBlogDescription());
+		 assertEquals("Java",blog.getBlogTitle());
+		 assertEquals(ld,blog.getDate());
 		 try {
-			 blog.setDescription(null);
-			 blog.setTitle(null);
-			 blog.setPostedOn(null);
+			 blog.setBlogDescription(null);
+			 blog.setBlogTitle(null);
+			 blog.setDate(null);
 		 }
 		 catch(Exception e) {
 			 e.printStackTrace();

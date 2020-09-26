@@ -53,7 +53,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 ## Progression - 1 
 1. ***Create a class called Blog inside the model package with the following arguments***
    - ***String title***
-   - ***int description***
+   - ***String description***
    - ***LocalDate postedOn***
 2. ***Generate appropriate getters and setters.***
 3. ***Generate a 3 argument constructor in the Blog class.***

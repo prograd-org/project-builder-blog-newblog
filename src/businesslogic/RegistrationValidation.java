@@ -8,6 +8,8 @@ public class RegistrationValidation {
 	private Pattern pattern;
 	  private Matcher matcher1,matcher2;
 	public boolean checkUserDetails(String email,String password,String confirmPassword) {
+		if (email == null || password == null || confirmPassword == null)
+			return false;
 		System.out.println("Enter check your details");
 		if(validEmail(email) && validPassword(password,confirmPassword))
 			return true;
@@ -16,7 +18,8 @@ public class RegistrationValidation {
 	}
 
 	private boolean validPassword(String password, String confirmPassword) {
-		
+		if (confirmPassword == null || password == null)
+			return false;
 		
 		 pattern = Pattern.compile(PASSWORD_PATTERN);
 		 if(password.equals(confirmPassword)) {

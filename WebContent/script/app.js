@@ -7,22 +7,22 @@ let edit=document.getElementById("edit");
 
 
 
-addBlog.onclick = () =>{
+addBlog.onclick = function add(){
 	console.log("onclick");
-	document.getElementById('popup').style.display = "block";
+	document.getElementById("popup").style.display = "block";
 } 
-edit.onclick = () =>{
+edit.onclick = function edit(){
 	
-	document.getElementById('popup').style.display = "block";
+	document.getElementById("popup").style.display = "block";
 	
 }
 //Function to Hide Popup
 function div_hide(){
-document.getElementById('popup').style.display = "none";
+document.getElementById("popup").style.display = "none";
 }
 
 // When submit button is clicked store the text field value to a hidden value and post the form data to server
-postButton.onclick = ()=>{
+postButton.onclick =function post(){
 	var ans=[];
 	let title=document.getElementById("title").value;
 	ans.push(title);
